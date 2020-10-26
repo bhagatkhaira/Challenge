@@ -1,0 +1,5 @@
+export const SET_BUSINESS_LIST = "SET_BUSINESS_LIST";
+
+export const SET_TYPE = "SET_TYPE";
+export const UPDATE_BUSINESS_LIST = "UPDATE_BUSINESS_LIST";
+export const SET_BUSINESS = "SET_BUSINESS";

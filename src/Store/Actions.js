@@ -1,9 +1,19 @@
 import * as ACTION_TYPES from "./Types";
 
 export const setType = (changedType) => ({
+  
   type: ACTION_TYPES.SET_TYPE,
   setType: changedType,
 });
+export const deleteItem = (id) =>{
+  
+  return (dispatch) => { 
+    dispatch({
+       type: ACTION_TYPES.DELETE_ITEM,
+       id: id,
+});
+}
+};
 
 export const findBusiness = (id) => {
   return (dispatch) => {
@@ -14,6 +24,7 @@ export const findBusiness = (id) => {
   };
 };
 export const addToList = (data) => {
+ 
   return (dispatch) => {
     dispatch({
       type: ACTION_TYPES.SET_BUSINESS_LIST,

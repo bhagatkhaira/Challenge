@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
-// const Card = styled.div`
-//   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-//   background:${props => props.theme.white};
-//   padding: 30px;
-// `;
 
 const Card = styled.div`
+background-color:white;
   display: grid;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14);
   border-top-left-radius: 20px;

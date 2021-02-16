@@ -1,14 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
-import BusinessList from "./Components/businessList/BusinessList";
-import CreateEditBusiness from "./Components/CreateEditBusiness/CreateEditBusiness";
+import BusinessList from "./Components/businessList/BusinessList.js";
+import CreateEditBusiness from "./Components/CreateEditBusiness/CreateEditBusiness.js";
 
 import "./App.css";
 
 function App(props) {
+
   return (
     <div className="App">
-      {props.type == "list" ? <BusinessList /> : <CreateEditBusiness />}
+      <BusinessList /> 
+      {props.type == "CREATE" ? <CreateEditBusiness />: props.type == "EDIT" && <CreateEditBusiness />}
     </div>
   );
 }
